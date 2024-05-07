@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 import federation from '@originjs/vite-plugin-federation'
 
 // https://vitejs.dev/config/
@@ -7,12 +7,12 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'host',
-      remotes: {
-        flights: 'http://localhost:3001/assets/remoteEntry.js',
-        home: 'http://localhost:3002/assets/remoteEntry.js',
+      name: 'home',
+      filename: "remoteEntry.js",
+      exposes: {
+        "./HomePage": "./src/pages/HomePage",
       },
-      shared: ['react', 'react-dom'],
+      shared: ["react", "react-dom"],
     }),
   ],
   build: {
@@ -20,5 +20,5 @@ export default defineConfig({
     target: 'esnext',
     minify: false,
     cssCodeSplit: false,
-  },
+  }
 })

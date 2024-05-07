@@ -3,6 +3,7 @@ import './App.css'
 
 import Button from 'flights/Button'
 import useCount from 'flights/store';
+import HomePage from 'home/HomePage'
 
 function App() {
   const [count, setCount] = useCount();
@@ -21,6 +22,7 @@ function App() {
             count is {count}
           </button>
         </div>
+        <HomePage />
       </div>
     </>
   )
