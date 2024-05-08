@@ -12,7 +12,7 @@ export default function ImageSlider ({ slides }) {
     }
 
     return (
-        <div className="max-w-full w-full h-[300px] m-auto px-4 relative group">
+        <div className="max-w-full w-full h-[200px] m-auto px-4 relative group items-center">
             <div style={{backgroundImage: `url(${slides[currentSlide].url})` }} className="w-full h-full rounded-2xl bg-center bg-cover transition-all duration-300">
                 {/* Left Arrow */}
                 <div onClick={() => prevSlide()} className="hidden group-hover:block absolute top-1/2 left-5 transform -translate-y-1/2 rounded-full bg-black bg-opacity-40 p-1 m-2">
@@ -26,7 +26,13 @@ export default function ImageSlider ({ slides }) {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
                 </div>
+                {/* Slide Content */}
+                <div className="absolute flex flex-col w-4/5 bottom-5 left-16 p-4">
+                    <h1 className="text-white text-4xl font-bold">{slides[currentSlide].title}</h1>
+                    <p className="text-white text-lg">{slides[currentSlide].description}</p>
+                </div>
             </div>
+            {/* Dots */}
             <div className="flex items-center right-[40%] bottom-1 absolute py-2">
                 {slides.map((slide, index) => (
                     <div key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 hover:w-5 hover:h-5 mx-2 rounded-full bg-gray-500 bg-opacity-50 hover:cursor-pointer hover:bg-opacity-100 hover:bg-white transition-all duration-300 ${currentSlide === index ? "bg-opacity-100" : ""}`}></div>
