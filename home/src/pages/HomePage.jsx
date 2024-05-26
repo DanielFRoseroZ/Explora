@@ -32,10 +32,6 @@ const slides = [
 export default function HomePage() {
     return (
         <main className="m-auto px-10">
-            <div className="w-full flex flex-col items-center text-center gap-2 my-4">
-                <h1 className="font-anton text-9xl w-full">EXPLORA</h1>
-                <p className="text-3xl">Tu brújula viajera</p>
-            </div>
             <section className="w-full items-center text-center my-4">
                 <h2 className="text-3xl text-center font-bold">
                     PLANEA TUS VIAJES A TU RITMO, DONDE Y CUANDO QUIERAS

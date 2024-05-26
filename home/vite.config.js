@@ -12,7 +12,7 @@ export default defineConfig({
       exposes: {
         "./HomePage": "./src/pages/HomePage",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "tailwindcss"],
     }),
   ],
   build: {

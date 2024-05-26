@@ -13,7 +13,7 @@ export default defineConfig({
         "./Button": "./src/components/Button/Button",
         "./store": "./src/utils/store",
       },
-      shared: ["react", "react-dom", "jotai"],
+      shared: ["react", "react-dom", "jotai", "tailwindcss"],
     }),
   ],
   build: {
