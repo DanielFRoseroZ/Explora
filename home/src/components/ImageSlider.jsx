@@ -12,7 +12,7 @@ export default function ImageSlider ({ slides }) {
     }
 
     return (
-        <div className="max-w-full w-full h-[200px] m-auto px-4 relative group items-center">
+        <div className="max-w-full w-full h-[300px] m-auto px-4 relative group items-center">
             <div style={{backgroundImage: `url(${slides[currentSlide].url})` }} className="w-full h-full rounded-2xl bg-center bg-cover transition-all duration-300">
                 {/* Left Arrow */}
                 <div onClick={() => prevSlide()} className="hidden group-hover:block absolute top-1/2 left-5 transform -translate-y-1/2 rounded-full bg-black bg-opacity-40 p-1 m-2">

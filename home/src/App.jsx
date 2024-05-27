@@ -2,7 +2,7 @@ import HomePage from "./pages/HomePage"
 
 function App() {
   return (
-    <main>
+    <main className="bg-[#47466D] w-screen">
       <HomePage />
     </main>
   )
