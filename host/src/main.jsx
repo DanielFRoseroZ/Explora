@@ -1,9 +1,8 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import * as ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import App from './App.jsx'
 import './index.css'
-<<<<<<< Updated upstream
-=======
 import ErrorPage from './routes/ErrorPage.jsx'
 import FlightsPage from './pages/Flights.jsx'
 import FlightDetails from './pages/FlightDetails.jsx'
@@ -37,10 +36,9 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   }
 ])
->>>>>>> Stashed changes
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

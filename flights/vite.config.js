@@ -10,17 +10,10 @@ export default defineConfig({
       name: 'flights',
       filename: "remoteEntry.js",
       exposes: {
-<<<<<<< Updated upstream
-        "./Button": "./src/components/Button/Button",
-        "./store": "./src/utils/store",
-      },
-      shared: ["react", "react-dom", "jotai", "tailwindcss"],
-=======
         "./SearchTool": "./src/components/SearchTool",
         "./FlightDetailsCard": "./src/components/Card/FlightDetailsCard",
       },
       shared: ["react", "react-dom","tailwindcss", "react-router-dom"],
->>>>>>> Stashed changes
     }),
   ],
   build: {
