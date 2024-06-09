@@ -9,7 +9,7 @@ export default defineConfig({
     federation({
       name: 'host',
       remotes: {
-        // flights: 'http://localhost:3001/assets/remoteEntry.js',
+        flights: 'http://localhost:3001/assets/remoteEntry.js',
         home: 'http://localhost:3002/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom', 'tailwindcss'],

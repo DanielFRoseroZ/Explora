@@ -73,7 +73,7 @@ export default function HomePage() {
                 <p className="text-2xl text-center 2xl:text-3xl">
                     Conoce los mejores restaurantes y lugares para disfrutar de la mejor comida local e internacional, con los mejores chefs y los platillos más deliciosos que puedas imaginar.
                 </p>
-                <div className="mx-52">
+                <div className="mx-28 2xl:mx-56">
                     <ResCommentCard comment={slides[0]} direction="right"/>
                     <ResCommentCard comment={slides[1]} direction="left"/>
                     <ResCommentCard comment={slides[2]} direction="right"/>

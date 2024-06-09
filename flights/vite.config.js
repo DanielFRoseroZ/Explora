@@ -10,10 +10,9 @@ export default defineConfig({
       name: 'flights',
       filename: "remoteEntry.js",
       exposes: {
-        "./Button": "./src/components/Button/Button",
-        "./store": "./src/utils/store",
+        "./SearchTool": "./src/components/SearchTool",
       },
-      shared: ["react", "react-dom", "jotai", "tailwindcss"],
+      shared: ["react", "react-dom","tailwindcss"],
     }),
   ],
   build: {
