@@ -17,7 +17,7 @@ export default function Nav() {
                         <Link to={"/hotels"} className="text-white">Hoteles</Link>
                     </li>
                     <li className='hover:cursor-pointer hover:scale-105 transition-all duration-100'> 
-                        <a href="#contact" className="text-white">Restaurantes</a>
+                        <Link to={"/restaurants"} className="text-white">Restaurantes</Link>
                     </li>
                 </ul>
 

@@ -19,9 +19,8 @@ export default function FlightsPage() {
     return(
         <main className='w-full flex flex-col items-center justify-center bg-white'>
             <Nav /> 
-            <section className='w-screen relative bg-white items-center flex flex-col justify-center pb-40 pt-20'>
+            <section className='w-screen bg-white items-center flex flex-col justify-center pb-40 pt-20'>
                 <SearchTool search={search} setSearch={setSearch} />
-                <div className='h-full w-full absolute top-0 left-0 bg-gradient-to-t from-[#47466D] to-transparent to-15% z-10'/>
             </section>
             <section className='bg-[#47466D] w-full py-20 items-center flex flex-col justify-center'>
                 <h1 className='font-anton text-5xl font-bold text-white text-center'>Destinos Populares</h1>

@@ -8,6 +8,7 @@ import FlightsPage from './pages/Flights.jsx'
 import FlightDetails from './pages/FlightDetails.jsx'
 import Hotels from './pages/Hotels.jsx'
 import HotelDetails from './pages/HotelDetails.jsx'
+import Restaurants from './pages/Restaurants.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
   {
     path: '/hotel/:id',
     element: <HotelDetails />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/restaurants',
+    element: <Restaurants />,
     errorElement: <ErrorPage />,
   }
 ])

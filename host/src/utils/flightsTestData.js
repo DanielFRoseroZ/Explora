@@ -59,4 +59,74 @@ export const flights = [
         "listaEscalas": [],
         "aerolinea": "United Airlines"
     },
+    {
+        "id": "FL5684",
+        "origen": "Barcelona",
+        "destino": "Los Angeles",
+        "fecha": "2024-08-01T14:00:00Z",
+        "precio": "850.00",
+        "numEscalas": "1",
+        "listaEscalas": ["Chicago"],
+        "aerolinea": "American Airlines"
+    },
+    {
+        "id": "FL5685",
+        "origen": "Madrid",
+        "destino": "New York",
+        "fecha": "2024-08-01T14:00:00Z",
+        "precio": "750.00",
+        "numEscalas": "0",
+        "listaEscalas": [],
+        "aerolinea": "United Airlines"
+    },
+    {
+        "id": "FL5686",
+        "origen": "Barcelona",
+        "destino": "Los Angeles",
+        "fecha": "2024-08-01T14:00:00Z",
+        "precio": "850.00",
+        "numEscalas": "1",
+        "listaEscalas": ["Chicago"],
+        "aerolinea": "American Airlines"
+    },
+    {
+        "id": "FL5687",
+        "origen": "Madrid",
+        "destino": "New York",
+        "fecha": "2024-08-01T14:00:00Z",
+        "precio": "750.00",
+        "numEscalas": "0",
+        "listaEscalas": [],
+        "aerolinea": "United Airlines"
+    },
+    {
+        "id": "FL5688",
+        "origen": "Barcelona",
+        "destino": "Los Angeles",
+        "fecha": "2024-08-01T14:00:00Z",
+        "precio": "850.00",
+        "numEscalas": "1",
+        "listaEscalas": ["Chicago"],
+        "aerolinea": "American Airlines"
+    },
+    {
+        "id": "FL5689",
+        "origen": "Madrid",
+        "destino": "New York",
+        "fecha": "2024-08-01T14:00:00Z",
+        "precio": "750.00",
+        "numEscalas": "0",
+        "listaEscalas": [],
+        "aerolinea": "United Airlines"
+    },
+    {
+        "id": "FL5690",
+        "origen": "Barcelona",
+        "destino": "Los Angeles",
+        "fecha": "2024-08-01T14:00:00Z",
+        "precio": "850.00",
+        "numEscalas": "1",
+        "listaEscalas": ["Chicago"],
+        "aerolinea": "American Airlines"
+    },
 ]
