@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: host
-        image: cronodan32/host:latest
+        image: cronodan32/hostv2:latest
         ports:
         - containerPort: 80
 ---
