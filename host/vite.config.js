@@ -9,9 +9,9 @@ export default defineConfig({
     federation({
       name: 'host',
       remotes: {
-        flights: 'http://localhost:6001/assets/remoteEntry.js',
-        home: 'http://localhost:3002/assets/remoteEntry.js',
-        hotels: 'http://localhost:6002/assets/remoteEntry.js',
+        flights: 'http://localhost:30001/assets/remoteEntry.js',
+        home: 'http://localhost:30002/assets/remoteEntry.js',
+        hotels: 'http://localhost:30003/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom', 'tailwindcss', 'react-router-dom'],
     }),
