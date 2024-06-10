@@ -1,16 +1,23 @@
 import { useState } from 'react';
 import SearchTool from 'flights/SearchTool';
 import Nav from '../components/Nav/Nav';
-import { flights } from '../utils/flightsTestData';
 import FlightInfoCard from '../components/Flights/FlightInfoCard';
+import getFlights from '../services/getFlights';
 
 export default function FlightsPage() {
+    const [flights, setFlights] = useState([]);
     const [search, setSearch] = useState({
         origen: '',
         destino: '',
         fecha: ''
     });
     const [showFlights, setShowFlights] = useState(false);
+
+    useEffect(() => {
+        getFlights().then(data => {
+            setFlights(data);
+        });
+    }, []);
 
     const handleToggleFlights = () => {
         setShowFlights(!showFlights);
